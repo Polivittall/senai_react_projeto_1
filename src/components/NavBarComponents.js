@@ -1,31 +1,40 @@
+
 import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 
-function NavBarComponents () {
+
+function NavBarComponent() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/livros">Livros</Nav.Link>
-            <Nav.Link href="/filmes">Filmes</Nav.Link>
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container fluid>
+        <Navbar.Brand href="/">Bibliotech </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll>
+            <Nav.Link href="/Home">Home</Nav.Link>
+            <Nav.Link href="/Livros">Livros</Nav.Link>
+            <Nav.Link href="/Filmes">Filmes</Nav.Link>
             
           </Nav>
-          <Nav>
-            <Nav.Link href="/login">Login</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
-          </Nav>
+          <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Nav.Link href="/Login">Login</Nav.Link>
+          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
 
-export default NavBarComponents;
+export default NavBarComponent;

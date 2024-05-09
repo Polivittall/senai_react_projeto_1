@@ -23,7 +23,7 @@ function login (){
                     </div>
 
                     <div className="mb-3"></div>
-                    <button class= "btn btn-success" onClick={submit}>Entrar</button>
+                    <button class= "btn btn-success" >Entrar</button>
 
                 </div>
 

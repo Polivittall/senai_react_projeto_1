@@ -1,13 +1,13 @@
 
-function book (){
+function BookPage (){
 
     return (
 
         <>
-        blabla
+        
         </>
     )
 
 }
 
-export default book;
+export default BookPage;
