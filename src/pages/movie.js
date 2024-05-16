@@ -1,13 +1,15 @@
 
-function movie (){
+
+function MoviePage(){
 
     return (
 
         <>
-        blabla
+    
+
         </>
     )
 
 }
 
-export default movie;
+export default MoviePage;

@@ -10,7 +10,7 @@ function NavBarComponent() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="/">Bibliotech </Navbar.Brand>
+        <Navbar.Brand href="/"><div className='Logo'><h1>BIBLIOTECH</h1></div></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

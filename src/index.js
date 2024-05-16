@@ -10,9 +10,10 @@ import {
 import "./index.css";
 import NavBarComponent from './components/NavBarComponents';
 import Home from './pages/home';
-import Book from './pages/book';
 import Login from './pages/login';
-import Movie from './pages/movie';
+import MoviePage from './pages/movie';
+import BookPage from './pages/book';
+
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
 
   {
     path: "/Book",
-    element: <Book/>
+    element: <BookPage/>
   },
   
   {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
 
   {
     path: "/Movie",
-    element: <Movie/>
+    element: <MoviePage/>
   }
 
 

@@ -1,20 +1,22 @@
 
 import Carousel from 'react-bootstrap/Carousel';
+import React from 'react';
+import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
 
 function HomePage(){
 
     return (
 
         <>
+
          <Carousel data-bs-theme="dark">
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src ={'https://i0.wp.com/assets.b9.com.br/wp-content/uploads/2016/10/netflix-catalogo.jpg?fit=1060%2C596&ssl=1'} 
-          alt="Bibliotech"
-        />
+
+      <div className='main col-sm-12 col-md-6 col-lg-6'>
+          <video src='https://media.w3.org/2010/05/sintel/trailer_hd.mp4' autoPlay loop muted></video>
+        </div>
+
         <Carousel.Caption>
         <font color="white">
         <h5 >Filmes</h5>
@@ -22,10 +24,14 @@ function HomePage(){
         </Carousel.Caption>
       </Carousel.Item>
 
+      
+
       <Carousel.Item>
         <img
+        width={300}
+        height={800}
           className="d-block w-100"
-          src ={'https://images.sentimentodeleitor.com.br/2020/03/kindle-unlimited-mlehores-livros.jpg'}
+          src ={'https://miro.medium.com/v2/resize:fit:10240/1*LCZNGw2pS9VUxJmqUAzYHg.jpeg'}
           alt="Livros"
         />
         <Carousel.Caption>
@@ -34,49 +40,160 @@ function HomePage(){
           <h1><b>Se aventure e conheça novas histórias!</b></h1></font> 
         </Carousel.Caption>
       </Carousel.Item>
-
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src ={'https://t.ctcdn.com.br/HQQ7ELtEMylfZulyYYS10uUu-QE=/640x360/smart/i875509.png'}
-          alt="Filmes"
-        />
-      </Carousel.Item>
     </Carousel>
-      
-    <div className='card'>
-      <div className='container pt-2'>
-        <h1><b>FILMES EM CATÁLOGO</b></h1>
 
-        <div className='content mb-2 col-sm-12 col-md-6 col-lg-6 pt-2 d-flex gap-5'>
-        <CardGroup>
-      <Card>
-        <Card.Img width={18} variant="top" src="https://historiaparadormir.com/wp-content/uploads/2023/10/Historinha-Infantil-Moana-Historia-Para-Dormir.png"/>
-        <Card.Body>
-          <Card.Title>Moana</Card.Title>
-        </Card.Body>
-      </Card>
-      <Card>
-        <Card.Img width={18} variant="top" src="https://s2-g1.glbimg.com/O8Deo7pBFibV7dfp-bQmYDk0sOs=/65x0:1783x1080/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/T/S/FMXflBTgAEN8bhmmG5eg/encanto-group-1.jpg" />
-        <Card.Body>
-          <Card.Title>Encanto</Card.Title>
-        </Card.Body>
-      </Card>
-      <Card>
-        <Card.Img width={18} variant="top" src="https://cinepop.com.br/wp-content/uploads/2022/11/avatar2_29.jpg" />
-        <Card.Body>
-          <Card.Title>Avatar</Card.Title>
-        </Card.Body>
-      </Card>
-    </CardGroup>
-        </div>
+    <div className='row boder pt-2'></div>
+      <b>TOP FILMES</b>
       
+
+      <div >
+  
+        <div className='content mb-2 col-sm-12 col-md-6 col-lg-6 pt-2 d-flex gap-5'>
+
+        <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://br.web.img3.acsta.net/pictures/16/09/12/22/13/415370.jpg" />
+      <Card.Body>
+        <Card.Title className='align-middle'>Moana</Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/91EKyuECxDL._AC_UF1000,1000_QL80_.jpg" />
+      <Card.Body>
+        <Card.Title className='align-middle'>Encanto</Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://lumiere-a.akamaihd.net/v1/images/daylight_payoff_poster_brazil_27eb2c00.jpeg" />
+      <Card.Body>
+        <Card.Title className='align-middle'>Wish</Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://lumiere-a.akamaihd.net/v1/images/image_b0bdb13a.jpeg?region=0%2C0%2C540%2C810&width=320" />
+      <Card.Body>
+        <Card.Title className='align-middle'>Divertidamente 2 </Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://apostiladecinema.com.br/wp-content/uploads/2021/06/luca-filme-pixar-animacao-disney-2021-critica-poster-scaled-e1629396654805.jpg" />
+      <Card.Body>
+        <Card.Title className='align-middle'>Luca</Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://br.web.img3.acsta.net/pictures/210/163/21016356_20130627200847944.jpg" />
+      <Card.Body>
+        <Card.Title className='align-middle'>Encantada</Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://br.web.img3.acsta.net/pictures/210/163/21016356_20130627200847944.jpg" />
+      <Card.Body>
+        <Card.Title className='align-middle'>Encantada</Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://br.web.img3.acsta.net/pictures/210/163/21016356_20130627200847944.jpg" />
+      <Card.Body>
+        <Card.Title className='align-middle'>Encantada</Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
 
       </div>
 
-    </div>
-            
-   
+      <div className='row'></div>
+      <b>TOP LIVROS</b>
+
+      <div>
+        <div className='content mb-2 col-sm-12 col-md-6 col-lg-6 pt-2 d-flex gap-5'>
+
+        <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/719esIW3D7L._AC_UF1000,1000_QL80_.jpg" />
+      <Card.Body>
+        <Card.Title className='align-middle'>Orgulho e preconceito</Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/A1UjcPz4gZL._AC_UF1000,1000_QL80_.jpg" />
+      <Card.Body>
+        <Card.Title className='align-middle'>Percy Jackson e os olimpianos</Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/51fMZPtkW+L.jpg" />
+      <Card.Body>
+        <Card.Title className='align-middle'>Uma segunda chance</Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://osmelhoreslivros.com.br/wp-content/uploads/2021/04/corte-de-nevoa-e-furia-202x300.jpg" />
+      <Card.Body>
+        <Card.Title className='align-middle'>Corte de névoa e fúria</Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/71SYepTUsDL._AC_UF1000,1000_QL80_.jpg" />
+      <Card.Body>
+        <Card.Title className='align-middle'>Vermelho, branco e sangue azul</Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/61GFsO7j0ZL._AC_UF1000,1000_QL80_DpWeblab_.jpg" />
+      <Card.Body>
+        <Card.Title className='align-middle'>Um estudo em vermelho</Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/715+3WHXWyL._AC_UF1000,1000_QL80_.jpg" />
+      <Card.Body>
+        <Card.Title className='align-middle'>Quem é você Alasca? </Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
+      <Card.Img variant="top" src="https://m.media-amazon.com/images/I/51M9IbBqxCL._AC_UF1000,1000_QL80_.jpg" />
+      <Card.Body>
+        <Card.Title className='align-middle'>A culpa é das estrelas</Card.Title>
+        <Button className='align-middle' variant="">Acessar</Button>
+      </Card.Body>
+    </Card>
+
+        </div>
+
+        
+      </div>
+        <div>
+        </div>
+      </div>
+
         </>
     )
 

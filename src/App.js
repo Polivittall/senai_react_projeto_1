@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import "node_modules/video-react/dist/video-react.css";
 
 function App() {
   return (
