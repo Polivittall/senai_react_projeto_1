@@ -91,25 +91,25 @@ function HomePage(){
     </Card>
 
     <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
-      <Card.Img variant="top" src="https://br.web.img3.acsta.net/pictures/210/163/21016356_20130627200847944.jpg" />
+      <Card.Img variant="top" src="https://lh4.googleusercontent.com/xbryw1wWK0SAxsKaNRX7QnMcaTWTZg9s24y_g-XtpPtOTNE6I5MWN_6rLrBgokcPYawGYMR8QMGurel-E4k5sn2qnjiV7Ru9ulQuBowuC3aUhbc0Y8FOzrnQGZRA-94wYr44ja1XH6M2306IDg" />
       <Card.Body>
-        <Card.Title className='align-middle'>Encantada</Card.Title>
+        <Card.Title className='align-middle'>A fantástica fábrica de chocolate</Card.Title>
         <Button className='align-middle' variant="">Acessar</Button>
       </Card.Body>
     </Card>
 
     <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
-      <Card.Img variant="top" src="https://br.web.img3.acsta.net/pictures/210/163/21016356_20130627200847944.jpg" />
+      <Card.Img variant="top" src="https://br.web.img3.acsta.net/medias/nmedia/18/91/05/36/20127436.jpg" />
       <Card.Body>
-        <Card.Title className='align-middle'>Encantada</Card.Title>
+        <Card.Title className='align-middle'>Toy Story</Card.Title>
         <Button className='align-middle' variant="">Acessar</Button>
       </Card.Body>
     </Card>
 
     <Card className='border md-4 col-sm-12 col-md-6 col-lg-6' style={{ width: '12rem' }}>
-      <Card.Img variant="top" src="https://br.web.img3.acsta.net/pictures/210/163/21016356_20130627200847944.jpg" />
+      <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJwPKnv5ZSM5JNAA1AYQQTRZbwmrh0Cm0zE-sBZcrqzw&s" />
       <Card.Body>
-        <Card.Title className='align-middle'>Encantada</Card.Title>
+        <Card.Title className='align-middle'>Monstros S.A</Card.Title>
         <Button className='align-middle' variant="">Acessar</Button>
       </Card.Body>
     </Card>
