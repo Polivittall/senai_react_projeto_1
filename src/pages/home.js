@@ -53,7 +53,7 @@ function HomePage(){
     
 
     <div className='row boder pt-2'></div>
-      <b>TOP FILMES</b>
+      <b><h1>TOP FILMES</h1></b>
       
 
       <div >
@@ -119,7 +119,7 @@ function HomePage(){
       </div>
 
       <div className='row'></div>
-      <b>TOP LIVROS</b>
+      <b><h1>TOP LIVROS</h1></b>
 
       <div>
         <div className='content mb-2 col-sm-12 col-md-6 col-lg-6 pt-2 d-flex gap-5'>

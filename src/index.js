@@ -27,7 +27,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/Book",
+    path: "/Livros",
     element: <BookPage/>
   },
   
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/Movie",
+    path: "/Filmes",
     element: <MoviePage/>
   }
 
