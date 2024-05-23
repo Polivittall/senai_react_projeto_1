@@ -15,11 +15,6 @@ import Login from './pages/login';
 import MoviePage from './pages/MoviePage';
 import BookPage from './pages/BookPage';
 
-
-
-
-
-
 const router = createBrowserRouter([
   {
     path: "/Home",
@@ -40,8 +35,6 @@ const router = createBrowserRouter([
     path: "/Filmes",
     element: <MoviePage/>
   }
-
-
 ]);
 
 
