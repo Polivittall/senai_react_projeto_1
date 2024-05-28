@@ -14,6 +14,7 @@ import Home from './pages/home';
 import Login from './pages/login';
 import MoviePage from './pages/MoviePage';
 import BookPage from './pages/BookPage';
+import Cadastro from './components/CadastroComponents';
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,14 @@ const router = createBrowserRouter([
   {
     path: "/Filmes",
     element: <MoviePage/>
+  },
+
+  {
+    path: "/Cadastro",
+    element: <Cadastro/>
   }
+
+
 ]);
 
 

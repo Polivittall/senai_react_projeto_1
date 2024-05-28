@@ -30,6 +30,7 @@ const Login = () => {
 
   return (
     <>
+    
       <div className='row justify-content-center'>
         <div className='card col-sm-12 col-md-8 col-lg-6'>
           <div className="card-header border-bottom" ><b><h1>Login</h1></b></div>
@@ -62,7 +63,7 @@ const Login = () => {
 
 
             <div className='register-link'>
-              <p>Não tem uma conta? <a href='#'>Cadastrar</a></p>
+              <p>Não tem uma conta? <a href='/Cadastro'>Cadastrar</a></p>
             </div>
 
             
