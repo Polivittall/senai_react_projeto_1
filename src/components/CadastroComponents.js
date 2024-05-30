@@ -30,8 +30,16 @@ function Cadastro() {
 
     return (
         <>
+        <div style={{
+        backgroundImage: `url("https://images.tcdn.com.br/img/img_prod/731995/tapete_chevron_fundo_cinza_965_1_20191212151907.jpg")`,
+       
+        width:2000,
+        height: 900
+      }}>
+
+        
         <div className="row justify-content-center">
-            <div className="card col-sm-12 col-md-8 col-lg-6">
+            <div className="card col-sm-12 col-md-8 col-lg-6" style={{"margin-top": "200px"}}>
 
                 <div className="card-header">
                     <h1>Cadastro</h1>
@@ -80,7 +88,8 @@ function Cadastro() {
 
             </div>
             </div>
-
+            <div/>
+            </div>
 
         </>
     )

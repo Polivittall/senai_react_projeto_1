@@ -10,15 +10,15 @@ const HomePage = () => {
     //realizar ações ao iniciar componente
     useEffect(() => {
         async function buscarFilmes() {
-            const filmes = axios.get("http://143.198.156.185/api/home").then(function (value) {
-                setFilmes(value.data);
+            const filmes = axios.get("http://143.198.156.185/api/filmes").then(function (value) {
+                setFilmes(value.data);console.log(value.data)
             }).catch(function (value) {
                 console.log(value);
             });
         }
 
         async function buscaLivros() {
-            const filmes = axios.get("http://143.198.156.185/api/home").then(function (value) {
+            const filmes = axios.get("http://143.198.156.185/api/livros").then(function (value) {
                 setLivros(value.data);
             }).catch(function (value) {
                 console.log(value);
@@ -36,7 +36,7 @@ const HomePage = () => {
                         <Carousel.Item key={index}>
                             <img
                                 className="d-block w-100"
-                                src={filme.imagens[2]}
+                                src={filme.imagens[0].url}
                                 alt={filme.titulo}
                             />
                             <Carousel.Caption>
@@ -77,6 +77,7 @@ const HomePage = () => {
                     </Col>
                 ))}
             </Row>
+
         </>
 
     );
