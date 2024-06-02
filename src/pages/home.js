@@ -54,9 +54,9 @@ const HomePage = () => {
                 {filmes.map((filme, index) => (
                     <Col xs={6} sm={4} md={3} lg={2}>
                         <Card>
-                            <Card.Img variant="top" src={filme.url_thumbnail} />
+                            <Card.Img variant="top" src={filme.url_thumbnail} height={350} />
                             <Card.Body>
-                                <Card.Title>{filme.titulo}</Card.Title>
+                                <Card.Title className='text-center'>{filme.titulo}</Card.Title>
                             </Card.Body>
                         </Card>
                     </Col>
