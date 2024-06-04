@@ -16,6 +16,7 @@ import MoviePage from './pages/MoviePage';
 import BookPage from './pages/BookPage';
 import Cadastro from './components/CadastroComponents';
 import Info from './components/InfoComponents';
+import InfoLivros from './components/InfoLivrosComponents';
 
 const router = createBrowserRouter([
   {
@@ -45,12 +46,12 @@ const router = createBrowserRouter([
 
   {
     path: "/filme/:id",
-    element: <Info />,
+    element: <Info/>,
 },
 
 {
-    path: "/livro/:id",
-    element: <Info />,
+    path: "/livros/:id",
+    element: <InfoLivros/>,
 }
 
 

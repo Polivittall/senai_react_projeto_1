@@ -48,7 +48,7 @@ const HomePage = () => {
                 </Carousel>
             </Row>
             <Row>
-                <h1>Filmes</h1>
+                <h1>FILMES</h1>
             </Row>
             <Row className="pt-2 pb-3">
                 {filmes.map((filme, index) => (
@@ -63,7 +63,7 @@ const HomePage = () => {
                 ))}
             </Row>
             <Row>
-                <h1>Livros</h1>
+                <h1>LIVROS</h1>
             </Row>
             <Row className="pt-2 pb-3">
                 {livros.map((livro, index) => (
@@ -71,12 +71,13 @@ const HomePage = () => {
                         <Card>
                             <Card.Img variant="top" src={livro.url_thumbnail} />
                             <Card.Body>
-                                <Card.Title>{livro.titulo}</Card.Title>
+                                <Card.Title className='text-center'>{livro.titulo}</Card.Title>
                             </Card.Body>
                         </Card>
                     </Col>
                 ))}
             </Row>
+         
 
         </>
 
@@ -84,3 +85,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+

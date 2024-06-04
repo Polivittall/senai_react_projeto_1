@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
-import { Alert } from 'react-bootstrap';
+import { Alert, Row } from 'react-bootstrap';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -33,12 +33,12 @@ const Login = () => {
       <div style={{
         backgroundImage: `url("https://www.plex.tv/wp-content/uploads/2024/01/Watch-Free-Hero-2048x1152-3.png")`,
         backgroundRepeat: 'no-repeat',
-        width: 2000,
+        width: 1895,
         height:900,
       }} >
         <div className='row justify-content-center'>
-          <div className='card col-sm-12 col-md-8 col-lg-6' style={{"margin-top": "200px"}}>
-            <div className="card-header border-bottom" ><b><h1>Login</h1></b></div>
+          <div className='card col-sm-12 col-md-3 col-lg-4' style={{"margin-top": "200px"}}>
+            <div className="card-header border-bottom" ><b>LOGIN</b></div>
             <div className="card-body">
               {error && <Alert variant="danger">{error}</Alert>}
               {success && <Alert variant="success">{success}</Alert>}
@@ -68,9 +68,9 @@ const Login = () => {
               </Form>
 
 
-              <div className='register-link'>
+              <Row className='register-link'>
                 <p>Não tem uma conta? <a href='/Cadastro'>Cadastrar</a></p>
-              </div>
+              </Row>
             </div>
           </div>
         </div>

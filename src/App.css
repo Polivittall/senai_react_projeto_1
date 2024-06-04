@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(116, 149, 211);
 }
 
 .App-logo {
@@ -15,18 +15,18 @@
 }
 
 .App-header {
-  background-color: #2e5094;
+  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: sans-serif(10px + 2vmin);
-  color: rgb(12, 12, 12);
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
-  color: #000000;
+  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -38,7 +38,3 @@
   }
 }
 
-.componenteQualquer {
-  font-family: 'Roboto';
-  font-weight: 400;
-}

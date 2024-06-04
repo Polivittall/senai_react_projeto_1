@@ -2,48 +2,46 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-const Info = () => {
+const InfoLivros = () => {
+
     const { id } = useParams();
 
-    const [filme, setFilme] = useState('');
+    const [livro, setLivro] = useState('');
+
 
     useEffect(() => {
-        async function buscarFilme() {
-            const filmes = axios.get(`http://143.198.156.185/api/filmes/porid/${id}`).then(function (value) {
-                setFilme(value.data);
+        async function buscarLivro() {
+            const livro = axios.get(`http://143.198.156.185/api/livros/porid/${id}`).then(function (value) {
+                setLivro(value.data);
             }).catch(function (value) {
                 console.log(value);
             });
         }
-
-        buscarFilme();
+        buscarLivro();
     });
-
-
 
     return (
         <>
-
             <div className="card">
 
                 <div className="card-header">
-                    {filme.titulo}
+                    {livro.titulo}
                 </div>
                 <div className="card-body">
-                    {filme.sinopse}
+                    {livro.sinopse}
                 </div>
                 <div className="card-body">
-                    CATEGORIA: {filme.categoria}
+                    CATEGORIA: {livro.categoria}
                 </div>
                 <div className="card-body">
-                    FAVORITOS: {filme.qtd_favoritos}
+                    FAVORITOS: {livro.qtd_favoritos}
                 </div>
 
                 <div className="card-body">
-                    <img src={filme.url_thumbnail} height={500} />
+                    <img src={livro.url_thumbnail} height={500} />
                 </div>
                 <div className="card-body">
-                    {filme.url_video}
+                    {livro.url_video}
                 </div>
 
 
@@ -54,4 +52,4 @@ const Info = () => {
     );
 };
 
-export default Info;
+export default InfoLivros;
